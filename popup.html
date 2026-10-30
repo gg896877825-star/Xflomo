@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xflomo</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { background: #fafcfb; }
+    body {
+      width: 320px;
+      margin: 0;
+      padding: 26px 24px 24px;
+      color: #20352b;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: 0;
+    }
+    header { display: flex; align-items: center; gap: 12px; }
+    .logo { display: block; width: 42px; height: 42px; border-radius: 8px; }
+    h1 { margin: 0; font-size: 23px; line-height: 1.2; font-weight: 700; }
+    .author { display: flex; align-items: center; gap: 8px; margin-top: 5px; color: #65736c; font-size: 11px; line-height: 18px; }
+    .author a { color: #1685d1; text-decoration: none; white-space: nowrap; }
+    .author a:hover { color: #0968ac; text-decoration: underline; }
+    .author a:focus-visible { outline: 2px solid #1685d1; outline-offset: 3px; border-radius: 2px; }
+    p { margin: 22px 0 24px; font-size: 14px; line-height: 1.7; color: #65736c; }
+    .actions { border-top: 1px solid #e5ebe7; padding-top: 20px; }
+    button {
+      display: block;
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid #21bd6d;
+      border-radius: 8px;
+      padding: 12px 16px;
+      background: #28c777;
+      box-shadow: 0 2px 3px #163d2410, inset 0 1px 0 #ffffff30;
+      color: #fafffc;
+      font: 600 14px/20px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+      cursor: pointer;
+      transition: background 150ms, box-shadow 150ms;
+    }
+    button:hover { background: #20b96b; box-shadow: 0 3px 8px #163d241a; }
+    button:active { background: #1aaa60; box-shadow: inset 0 1px 3px #163d2420; }
+    button:focus-visible { outline: 3px solid #20352b; outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) { button { transition: none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="icons/icon-48.png" width="42" height="42" alt="">
+    <div>
+      <h1>Xflomo</h1>
+      <div class="author"><a href="https://x.com/CooperZhangAI" target="_blank" rel="noopener noreferrer">作者：@Magellan.Zh麦哲张</a></div>
+    </div>
+  </header>
+  <p>让X有和flomo一样的外观</p>
+  <div class="actions"><button id="toggle" type="button">读取状态…</button></div>
+  <script src="popup.js"></script>
+</body>
+</html>

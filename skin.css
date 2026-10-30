@@ -1,0 +1,248 @@
+
+html.xf-on{color-scheme:light;--xf-bg:oklch(98% .004 150);--xf-paper:oklch(99.7% .002 150);--xf-ink:oklch(29% .012 150);--xf-muted:oklch(49% .018 150);--xf-line:oklch(91% .008 150);--xf-green:#31cf79;--xf-hover:oklch(94.5% .012 150)}
+html.xf-on body,html.xf-on #react-root{background:var(--xf-bg)!important}
+html.xf-on :is(.xf-shell,#react-root div:has(> header[role=banner]):has(> main[role=main])){max-width:1080px!important;margin:0 auto!important;padding:28px 24px 0!important;gap:36px;box-sizing:border-box}
+html.xf-on header[role=banner]{flex:0 0 248px!important;width:248px!important;align-items:flex-start!important;z-index:3}
+html.xf-on header[role=banner]>div{width:248px!important;margin:0!important;align-self:flex-start!important}
+html.xf-on :is(.xf-rail,header[role=banner]>div>div){width:248px!important;left:auto!important;top:28px!important;max-height:calc(100dvh - 56px)!important;overflow:auto!important;padding:0 12px 20px 0!important;box-sizing:border-box;overscroll-behavior:contain;scrollbar-width:thin}
+html.xf-on :is(.xf-rail,header[role=banner]>div>div)>div,html.xf-on :is(.xf-rail,header[role=banner]>div>div)>div>div{width:100%!important;max-width:100%!important;min-height:0!important;flex-shrink:0!important}
+html.xf-on header[role=banner] h1{display:none!important}
+html.xf-on header[role=banner] nav{width:100%!important;gap:2px!important}
+html.xf-on header[role=banner] nav > :is(a,button){width:100%!important;padding:0!important;min-height:40px!important;justify-content:flex-start!important;color:var(--xf-ink)!important}
+html.xf-on header[role=banner] nav > :is(a,button)>div{padding:9px 12px!important;border-radius:8px!important;width:100%!important;box-sizing:border-box;justify-content:flex-start!important}
+html.xf-on header[role=banner] nav > :is(a,button):hover>div{background:var(--xf-hover)!important}
+html.xf-on header[role=banner] nav svg{width:20px!important;height:20px!important}
+html.xf-on header[role=banner] nav span{font-size:14px!important;font-weight:500!important}
+html.xf-on header[role=banner] nav > a.xf-selected>div{background:var(--xf-green)!important;color:var(--xf-paper)!important}
+html.xf-on header[role=banner] nav > a.xf-selected :is(span,svg){color:var(--xf-paper)!important}
+html.xf-on [data-testid=SideNav_NewTweet_Button]{width:100%!important;min-height:38px!important;margin:14px 0 8px!important;border:0!important;border-radius:8px!important;background:var(--xf-green)!important}
+html.xf-on [data-testid=SideNav_NewTweet_Button] span{font-size:14px!important}
+html.xf-on main[role=main]{flex:1 1 0!important;min-width:0!important;width:auto!important;align-items:stretch!important}
+html.xf-on .xf-main-inner,html.xf-on main[role=main]>div,html.xf-on main[role=main]>div>div,html.xf-on .xf-feed-width{width:100%!important;max-width:100%!important;margin-inline:0!important;box-sizing:border-box;background:transparent!important}
+html.xf-on [data-testid=primaryColumn]{width:100%!important;max-width:100%!important;min-width:0!important;border:0!important;background:transparent!important}
+html.xf-on [data-testid=sidebarColumn]{display:none!important}
+html.xf-on [data-testid=primaryColumn]>div{background:transparent!important}
+html.xf-on :is([data-testid=tweetButtonInline],[data-testid=tweetButton]){background-color:var(--xf-green)!important}
+html.xf-on [data-testid=primaryColumn] article[data-testid=tweet]{background:var(--xf-paper)!important;border:1px solid var(--xf-line)!important;border-radius:12px!important;margin:0 0 14px!important;padding:20px!important;box-sizing:border-box}
+html.xf-on [data-testid=primaryColumn] [data-testid=cellInnerDiv]{border-bottom:0!important;background:transparent!important}
+html.xf-on [data-testid=tweetText]{font-size:15px!important;line-height:1.75!important;letter-spacing:.005em}
+html.xf-on [data-testid=User-Name]{font-size:13px!important;line-height:1.5!important}
+html.xf-on :is([data-testid=tweetPhoto],[data-testid='card.wrapper']){border-radius:10px!important;overflow:hidden}
+.xf-panel{font:14px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--xf-ink);width:100%;box-sizing:border-box;margin-bottom:18px}
+.xf-heading{display:flex;align-items:center;gap:10px;margin-bottom:16px;min-width:0}.xf-heading>div{min-width:0}
+.xf-heading img{width:36px;height:36px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.xf-name{font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.xf-handle,.xf-note{font-size:12px;line-height:1.6;color:var(--xf-muted)}
+.xf-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin:0 0 18px}.xf-stat{min-width:0}.xf-stat{text-decoration:none;color:inherit}.xf-stat strong{display:block;font-size:20px;font-weight:500;font-variant-numeric:tabular-nums}.xf-stat span{font-size:12px;color:var(--xf-muted)}
+.xf-activity{border-block:1px solid var(--xf-line);padding:8px 0}.xf-activity summary{cursor:pointer;font-size:12px;color:var(--xf-muted);padding:4px 0}.xf-activity[open] summary{margin-bottom:12px}
+.xf-heat{display:grid;grid-auto-flow:column;grid-template-rows:repeat(7,10px);grid-auto-columns:10px;gap:4px}.xf-day{background:var(--xf-line);border-radius:2px}.xf-day[data-level='1']{background:#c5edd5}.xf-day[data-level='2']{background:#8bdba9}.xf-day[data-level='3']{background:#42c778}.xf-day[data-level='4']{background:#159b4c}
+.xf-months{display:flex;justify-content:space-between;font-size:11px;color:var(--xf-muted);margin:8px 0}.xf-note{margin:8px 0}
+.xf-follow-head{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--xf-muted);margin:16px 0 8px}.xf-follow-tools{display:flex;gap:2px}
+.xf-panel button{font:inherit;border:0;background:transparent;color:var(--xf-muted);cursor:pointer;padding:5px 7px;min-height:32px;border-radius:6px}.xf-panel button:hover{background:var(--xf-hover)}
+.xf-panel input{width:100%;box-sizing:border-box;padding:9px 10px;border:1px solid var(--xf-line);border-radius:7px;background:var(--xf-paper);font:inherit;color:var(--xf-ink);margin:0 0 8px}
+.xf-person{display:flex;align-items:center;gap:10px;padding:8px;text-decoration:none;color:inherit;border-radius:8px;min-height:40px}.xf-person:hover{background:var(--xf-hover)}.xf-person img{width:30px;height:30px;border-radius:50%;object-fit:cover}.xf-person>div{min-width:0}
+.xf-follow-link{display:block;color:var(--xf-muted);font-size:12px;padding:8px 0;text-underline-offset:3px}.xf-restore{margin-top:14px!important;font-size:12px!important}
+@media(prefers-reduced-motion:no-preference){.xf-person,.xf-panel button{transition:background-color 160ms ease-out}}
+@media(max-width:1000px){html.xf-on :is(.xf-shell,#react-root div:has(> header[role=banner]):has(> main[role=main])){padding:20px 16px 0!important;gap:24px}html.xf-on header[role=banner]{flex-basis:220px!important;width:220px!important}html.xf-on header[role=banner]>div,html.xf-on :is(.xf-rail,header[role=banner]>div>div){width:220px!important}.xf-heat{grid-template-rows:repeat(7,9px);grid-auto-columns:9px;gap:3px}}
+@media(max-width:760px){html.xf-on :is(.xf-shell,#react-root div:has(> header[role=banner]):has(> main[role=main])){padding:8px!important;gap:8px}html.xf-on header[role=banner]{flex-basis:56px!important;width:56px!important}html.xf-on header[role=banner]>div,html.xf-on :is(.xf-rail,header[role=banner]>div>div){width:56px!important}html.xf-on :is(.xf-rail,header[role=banner]>div>div){top:8px!important;padding:0!important;max-height:calc(100dvh - 16px)!important}.xf-panel{display:none!important}html.xf-on header[role=banner] nav span{display:none!important}html.xf-on header[role=banner] nav > :is(a,button)>div{justify-content:center!important;padding:12px!important}html.xf-on [data-testid=primaryColumn] article[data-testid=tweet]{padding:14px 12px!important}}
+@media(max-width:480px){html.xf-on :is(.xf-shell,#react-root div:has(> header[role=banner]):has(> main[role=main])){padding-inline:4px!important;gap:4px}html.xf-on header[role=banner],html.xf-on header[role=banner]>div,html.xf-on :is(.xf-rail,header[role=banner]>div>div){width:44px!important}html.xf-on header[role=banner]{flex-basis:44px!important}html.xf-on header[role=banner] nav > :is(a,button)>div{padding:10px!important}}
+
+.xf-activity{border:0;padding:0 0 12px}.xf-heading{margin-bottom:14px}.xf-activity .xf-note{font-size:11px;margin:6px 0}.xf-activity .xf-follow-link{padding:3px 0}.xf-activity .xf-months{margin:6px 0}.xf-panel{margin-bottom:12px}
+html.xf-on header[role=banner] nav > :is(a,button){min-height:36px!important}html.xf-on header[role=banner] nav > :is(a,button)>div{padding:7px 12px!important}
+html.xf-on .xf-heading{width:100%;text-align:left;display:flex;align-items:center;gap:10px;padding:4px 0!important;min-height:52px;border-radius:8px;font:inherit;color:var(--xf-ink)}
+html.xf-on .xf-heading::after{content:'•••';margin-left:auto;color:var(--xf-muted);padding:0 8px}
+html.xf-on .xf-heading .xf-name{color:var(--xf-ink)}
+html.xf-on .xf-heading .xf-handle{display:block;color:var(--xf-muted)}
+html.xf-on .xf-heat{grid-template-columns:repeat(16,minmax(0,1fr));grid-template-rows:repeat(7,10px);grid-auto-columns:auto;gap:4px;width:100%}
+html.xf-on .xf-months{font-size:12px}
+
+html.xf-on .xf-stat{text-align:center}
+
+html.xf-on [data-testid="primaryColumn"] :is([data-testid="primaryColumn"] > div, [data-testid="primaryColumn"] > div > div):not(article){background-color:transparent!important}
+html.xf-on [data-testid="primaryColumn"] div:has(>div>h2),
+html.xf-on [data-testid="primaryColumn"] div:has(>h2),
+html.xf-on [data-testid="primaryColumn"] div:has(>[role="search"]),
+html.xf-on [data-testid="primaryColumn"] div:has(>div>[role="search"]),
+html.xf-on [data-testid="primaryColumn"] div:has(>[data-testid="SearchBox_Search_Input"]){background-color:var(--xf-bg)!important;backdrop-filter:none!important}
+html.xf-on [data-testid="primaryColumn"] div:has(>[data-testid="app-bar-back"]),
+html.xf-on [data-testid="primaryColumn"] div:has(>div>[data-testid="app-bar-back"]){background-color:var(--xf-bg)!important}
+
+html.xf-on header[role="banner"] nav:not(.xf-nav-expanded) .xf-nav-secondary{display:none!important}
+html.xf-on header[role="banner"] nav.xf-nav-expanded{max-height:36dvh;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+html.xf-on header[role="banner"] nav .xf-nav-toggle{display:flex!important;align-items:center!important;padding:8px 12px!important;font:13px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;color:var(--xf-muted)!important;border:0!important;background:transparent!important;border-radius:8px;cursor:pointer;min-height:36px!important}
+html.xf-on header[role="banner"] nav .xf-nav-toggle:hover{background:var(--xf-hover)!important}
+
+html.xf-on :is(.xf-rail,header[role="banner"]>div>div){height:calc(100dvh - 56px)!important;max-height:calc(100dvh - 56px)!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;padding-bottom:64px!important;gap:0!important}
+html.xf-on .xf-rail > [data-xf-owned]{flex-shrink:0}
+html.xf-on .xf-rail > div:not([data-xf-owned]){flex:0 0 auto!important;min-height:0!important}
+html.xf-on #xf-profile{flex:0 0 auto!important}
+html.xf-on #xf-following{display:flex;flex-direction:column;flex:1 1 0!important;min-height:72px!important;margin:12px 0 0!important;overflow:hidden!important}
+html.xf-on .xf-follow-head{flex:0 0 auto;margin:0 0 6px}
+html.xf-on .xf-follow-list{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;padding-right:4px}
+html.xf-on #xf-following input{flex:0 0 auto}
+html.xf-on [data-testid="SideNav_NewTweet_Button"]{position:fixed!important;left:max(24px,calc((var(--xf-layout-width,100vw) - 1080px)/2 + 24px))!important;bottom:24px!important;width:224px!important;height:44px!important;min-height:44px!important;margin:0!important;border-radius:999px!important;z-index:5!important;background:var(--xf-green)!important;box-shadow:0 0 0 10px var(--xf-bg)!important}
+html.xf-on [data-testid="SideNav_NewTweet_Button"]:hover{filter:brightness(.96)}
+@media(max-width:1000px){html.xf-on [data-testid="SideNav_NewTweet_Button"]{left:16px!important;bottom:20px!important;width:196px!important}html.xf-on :is(.xf-rail,header[role="banner"]>div>div){height:calc(100dvh - 40px)!important;max-height:calc(100dvh - 40px)!important}}
+@media(max-width:760px){html.xf-on :is(.xf-rail,header[role="banner"]>div>div){height:calc(100dvh - 16px)!important;max-height:calc(100dvh - 16px)!important;overflow-y:auto!important;padding-bottom:62px!important}html.xf-on #xf-following{display:none!important}html.xf-on [data-testid="SideNav_NewTweet_Button"]{left:8px!important;bottom:16px!important;width:48px!important;height:44px!important}html.xf-on header[role="banner"] nav .xf-nav-toggle{font-size:10px!important;justify-content:center!important;padding:8px 0!important;white-space:normal!important}html.xf-on header[role="banner"] nav.xf-nav-expanded{max-height:none;overflow:visible}}
+@media(max-height:700px) and (min-width:761px){html.xf-on .xf-heat{grid-template-rows:repeat(7,7px);gap:3px}html.xf-on .xf-heading{min-height:44px}.xf-stats{margin-bottom:12px}html.xf-on header[role="banner"] nav > :is(a,button){min-height:32px!important}html.xf-on header[role="banner"] nav > :is(a,button)>div{padding-block:5px!important}}
+html.xf-on .xf-heading::after{font-size:14px;font-weight:700;letter-spacing:2px;line-height:1;padding:8px}
+html.xf-on header[role="banner"] nav.xf-nav-all{max-height:calc(100dvh - var(--xf-nav-top,300px) - 90px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+html.xf-on .xf-day[data-level="0"]{background:var(--xf-line)}
+html.xf-on .xf-day[data-level="1"]{background:#c5edd5}
+html.xf-on .xf-day[data-level="2"]{background:#8bdba9}
+html.xf-on .xf-day[data-level="3"]{background:#31cf79}
+html.xf-on .xf-day[data-level="4"]{background:#20a65c}
+html.xf-on .xf-day[data-level="5"]{background:#10743c}
+html.xf-on .xf-heat-tooltip{position:fixed;z-index:2147483647;pointer-events:none;white-space:nowrap;background:#303a34;color:#f9fcfa;padding:7px 10px;border-radius:6px;font:12px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;box-shadow:0 3px 12px #14291c20}
+html.xf-on .xf-heat-tooltip[hidden]{display:none!important}
+@media(max-width:760px){html.xf-on header[role="banner"] nav.xf-nav-all{max-height:none;overflow:visible}}
+
+/* Use the real React account control, positioned over its layout placeholder. */
+@media(min-width:761px){
+  html.xf-on [data-testid="SideNav_AccountSwitcher_Button"]{position:fixed!important;left:var(--xf-account-left,24px)!important;top:var(--xf-account-top,28px)!important;width:var(--xf-account-width,236px)!important;height:52px!important;min-height:52px!important;margin:0!important;padding:4px 0!important;opacity:1!important;pointer-events:auto!important;z-index:10!important;color:var(--xf-ink)!important;background:var(--xf-bg)!important}
+  html.xf-on header:has([data-testid="SideNav_AccountSwitcher_Button"]) .xf-heading{visibility:hidden}
+}
+/* The native composer, emoji picker and poll fields keep all original styles. */
+html.xf-on :is([data-testid="tweetButtonInline"],[data-testid="tweetButton"]){background-color:var(--xf-green)!important}
+
+/* X anchors this particular menu upward; the account now lives at the top. */
+@media(min-width:761px){
+ html.xf-on [data-testid="hoverCardParent"]:has([data-testid="AccountSwitcher_Logout_Button"]){position:fixed!important;top:calc(var(--xf-account-top,28px) + 60px)!important;bottom:auto!important;left:var(--xf-account-left,24px)!important;max-width:calc(100vw - 32px)!important;max-height:calc(100dvh - 100px)!important;overflow-y:auto!important}
+}
+
+/* Keep every rail section reachable when the viewport is short. */
+html.xf-on :is(.xf-rail,header[role="banner"]>div>div){overflow-y:auto!important;scrollbar-width:none}
+html.xf-on #xf-following{flex-shrink:0!important}
+
+/* Only the left navigation grows; keep the original centered page width. */
+@media(min-width:761px){
+ html.xf-on header[role="banner"] nav.xf-nav-all{height:max(100px,calc(100dvh - var(--xf-nav-top,300px) - 90px));max-height:none;flex-shrink:0!important}
+}
+
+/* One outer frame for avatar, text area and actions. No native field overrides. */
+html.xf-on [data-testid="primaryColumn"] .xf-compose-card.xf-compose-card{box-sizing:border-box!important;width:100%!important;margin:16px 0!important;padding:18px 18px 4px!important;border:1px solid var(--xf-line)!important;border-radius:12px!important;background:var(--xf-paper)!important}
+@media(max-width:760px){html.xf-on [data-testid="primaryColumn"] .xf-compose-card.xf-compose-card{padding:12px 12px 4px!important}}
+
+/* Compact profile rhythm leaves more room for navigation. */
+html.xf-on #xf-profile{margin-bottom:8px}
+html.xf-on .xf-heading{box-sizing:border-box;min-height:52px;height:52px;margin-bottom:8px}
+html.xf-on .xf-stats{margin-bottom:10px}
+html.xf-on .xf-activity{padding-bottom:0}
+html.xf-on .xf-activity .xf-months{margin:4px 0}
+
+@media(min-width:761px){
+ /* The rail ends above the fixed post button. Only its menu scrolls. */
+ html.xf-on :is(.xf-rail,header[role="banner"]>div>div){height:calc(100dvh - 108px)!important;max-height:calc(100dvh - 108px)!important;overflow:hidden!important;padding-bottom:0!important}
+ html.xf-on header[role="banner"] .xf-rail .xf-nav-host{flex:1 1 auto!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:hidden!important;padding:0!important;margin:0!important;display:flex!important;flex-direction:column!important}
+ html.xf-on header[role="banner"] nav.xf-nav-all{flex:1 1 auto!important;min-height:0!important;height:auto!important;max-height:none!important;overflow-y:auto!important;overflow-x:hidden!important;padding:0!important;margin:0!important}
+ html.xf-on header[role="banner"] nav.xf-nav-all>a,html.xf-on header[role="banner"] nav.xf-nav-all>button{flex-shrink:0!important}
+ html.xf-on header[role="banner"] nav #xf-following{flex:0 0 auto!important;min-height:0!important;overflow:visible!important;margin-top:16px!important}
+ html.xf-on header[role="banner"] nav .xf-follow-list{flex:none;overflow:visible;padding:0}
+}
+/* Change the native selected indicator itself, without adding a second line. */
+html.xf-on .xf-page-tab[aria-selected="true"]>div>div>div{background-color:var(--xf-green)!important}
+@media(min-width:761px){
+ html.xf-on header[role="banner"] .xf-rail .xf-nav-host>div:not(.xf-nav-host){height:0!important;min-height:0!important;flex:0 0 0!important;margin:0!important;padding:0!important;overflow:visible!important}
+}
+
+html.xf-on .xf-person-avatar{position:relative;display:flex;align-items:center;justify-content:center;width:30px;height:30px;flex:0 0 30px;border-radius:50%;overflow:hidden;background:var(--xf-hover);color:var(--xf-muted);font-size:13px;font-weight:600}
+html.xf-on .xf-person-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:var(--xf-paper)}
+
+/* Page headings and timeline tabs blend into the canvas across routes. */
+html.xf-on [data-testid="primaryColumn"] .xf-page-chrome.xf-page-chrome{background-color:var(--xf-bg)!important;backdrop-filter:none!important}
+html.xf-on .xf-page-tab[aria-selected="true"]>div>div>div{background-color:var(--xf-green)!important}
+
+/* A followed profile is selected as one row, independently of main navigation. */
+html.xf-on #xf-following .xf-person{box-sizing:border-box;position:relative;width:100%}
+html.xf-on #xf-following .xf-person-selected{background:var(--xf-hover);box-shadow:inset 3px 0 var(--xf-green);color:var(--xf-ink)}
+html.xf-on #xf-following .xf-person-selected>.xf-person-avatar{color:var(--xf-muted)}
+html.xf-on #xf-following .xf-person-selected>.xf-person-avatar,
+html.xf-on #xf-following .xf-person-selected>div{background-color:transparent!important}
+html.xf-on #xf-following .xf-person-selected .xf-name{color:var(--xf-ink)!important}
+html.xf-on #xf-following .xf-person-selected .xf-handle{color:var(--xf-muted)!important}
+
+/* Quiet selection: the name carries emphasis; a small trailing dot marks location. */
+html.xf-on #xf-following .xf-person-selected{background:transparent!important;box-shadow:none!important}
+html.xf-on #xf-following .xf-person-selected:hover{background:var(--xf-hover)!important}
+html.xf-on #xf-following .xf-person-selected::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--xf-muted);margin-left:auto;flex:0 0 5px}
+html.xf-on #xf-following .xf-person{padding-right:12px}
+html.xf-on #xf-following .xf-person .xf-name{font-weight:500}
+html.xf-on #xf-following .xf-person-selected .xf-name{font-weight:650}
+/* Indicator backgrounds must never paint the profile tab label. */
+html.xf-on .xf-page-tab[aria-selected="true"]>div>div>div:has(span),
+html.xf-on .xf-page-tab[aria-selected="true"]>div>div>div[dir]{background-color:transparent!important}
+
+html.xf-on #xf-ad-slot{position:fixed;top:0;left:0;right:auto;width:var(--xf-layout-width,100%);height:40px;padding:0 40px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;z-index:1;font:600 13px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:0;color:#9a491a;background:#fff3e7}
+html.xf-on .xf-ad-content{display:flex;align-items:center;justify-content:center;gap:10px;min-width:0;max-width:100%}
+html.xf-on .xf-ad-badge{flex-shrink:0;font-size:12px;line-height:20px;font-weight:600;white-space:nowrap;border:0;border-radius:3px;padding:1px 8px;background:#f9d6b4;color:#8a3f12}
+html.xf-on .xf-ad-message{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+html.xf-on #xf-ad-slot .xf-ad-cta{flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;gap:6px;height:24px;min-height:24px;padding:0 10px;box-sizing:border-box;border:0;border-radius:999px;white-space:nowrap;text-decoration:none;color:#fffaf6;background:#a94a12;font-size:12px;line-height:16px}
+html.xf-on #xf-ad-slot .xf-ad-cta:hover{background:#8e3c0d}
+html.xf-on .xf-ad-arrow{font-size:14px;line-height:1}
+html.xf-on #xf-ad-slot button{position:absolute;right:8px;top:8px;width:24px;height:24px;border:0;background:transparent;color:#997350;font-size:19px;line-height:24px;cursor:pointer;padding:0}
+html.xf-on #xf-ad-slot :is(a,button):focus-visible{outline:2px solid #9a491a;outline-offset:2px}
+html.xf-on .xf-shell{position:relative!important;z-index:0!important}
+html.xf-on #layers{position:relative!important;z-index:2!important}
+@media(min-width:761px){
+ html.xf-on{--xf-content-top:0px}
+ html.xf-on.xf-ad-visible{--xf-content-top:40px}
+ html.xf-on :is(.xf-shell,#react-root div:has(> header[role=banner]):has(> main[role=main])){padding-top:var(--xf-content-top)!important;align-items:flex-start!important}
+ html.xf-on :is(.xf-rail,header[role="banner"]>div>div){position:fixed!important;top:var(--xf-content-top)!important;height:calc(100dvh - var(--xf-content-top) - 80px)!important;max-height:calc(100dvh - var(--xf-content-top) - 80px)!important}
+ html.xf-on [data-testid="primaryColumn"] .xf-sticky-chrome{top:var(--xf-content-top)!important}
+ html.xf-on .xf-rail #xf-profile{padding-top:8px}
+ html.xf-on header[role="banner"] nav .xf-nav-label{margin-left:16px;font-size:14px;font-weight:500;white-space:nowrap}
+ html.xf-on header:has(.xf-account-compact) .xf-heading{visibility:visible}
+ html.xf-on [data-testid="SideNav_AccountSwitcher_Button"].xf-account-compact{background:transparent!important}
+ html.xf-on [data-testid="SideNav_AccountSwitcher_Button"].xf-account-compact>*{visibility:hidden}
+}
+
+/* Chat gets a narrow icon rail and enough room for X's native two-panel layout. */
+@media(min-width:761px){
+ html.xf-on.xf-chat #react-root .xf-shell.xf-shell{max-width:none!important;width:100%!important;margin:0!important;padding:var(--xf-content-top,0px) 0 0!important;gap:0!important}
+ html.xf-on.xf-chat header[role="banner"]{flex:0 0 72px!important;width:72px!important;box-sizing:border-box!important;border-right:1px solid var(--xf-line)}
+ html.xf-on.xf-chat header[role="banner"]>div{width:72px!important}
+ html.xf-on.xf-chat :is(.xf-rail,header[role="banner"]>div>div){left:0!important;width:72px!important;padding:76px 8px 80px!important;height:calc(100dvh - var(--xf-content-top,0px))!important;max-height:calc(100dvh - var(--xf-content-top,0px))!important}
+ html.xf-on.xf-chat :is(#xf-profile,#xf-following){display:none!important}
+ html.xf-on.xf-chat header[role="banner"] h1{display:none!important}
+ html.xf-on.xf-chat header[role="banner"] h1 a{padding:8px!important}
+ html.xf-on.xf-chat header[role="banner"] nav :is(a,button){justify-content:center!important}
+ html.xf-on.xf-chat header[role="banner"] nav>:is(a,button)>div{justify-content:center!important;padding:12px!important}
+ html.xf-on.xf-chat header[role="banner"] nav :is(span,.xf-nav-label){display:none!important}
+ html.xf-on.xf-chat header[role="banner"] nav svg{width:24px!important;height:24px!important}
+ html.xf-on.xf-chat [data-testid="SideNav_NewTweet_Button"]{left:12px!important;bottom:16px!important;width:48px!important;height:48px!important;box-shadow:none!important}
+ html.xf-on.xf-chat [data-testid="SideNav_NewTweet_Button"] span{display:none!important}
+ html.xf-on.xf-chat [data-testid="SideNav_NewTweet_Button"] svg{display:block!important;width:24px!important;height:24px!important}
+ html.xf-on.xf-chat [data-testid="SideNav_AccountSwitcher_Button"]{left:12px!important;top:calc(var(--xf-content-top,0px) + 12px)!important;bottom:auto!important;width:48px!important;height:48px!important;padding:4px!important;background:transparent!important}
+ html.xf-on.xf-chat [data-testid="SideNav_AccountSwitcher_Button"]>*{visibility:visible!important}
+ html.xf-on.xf-chat [data-testid="SideNav_AccountSwitcher_Button"]>:not(:first-child){display:none!important}
+ html.xf-on.xf-chat main[role="main"]{min-width:0!important}
+ html.xf-on.xf-chat main[role="main"] .xf-main-inner{padding-right:0!important}
+ html.xf-on.xf-chat [data-testid="xchatEmbedRoute"]{height:calc(100dvh - var(--xf-content-top,0px))!important;min-width:0!important}
+}
+
+/* X may retain its icon-only composer control after leaving chat. */
+@media(min-width:761px){
+ html.xf-on:not(.xf-chat) [data-testid="SideNav_NewTweet_Button"] :is(span,svg){visibility:hidden!important}
+ html.xf-on:not(.xf-chat) [data-testid="SideNav_NewTweet_Button"]::after{content:"发帖";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:white;font:600 14px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;pointer-events:none}
+}
+
+/* Author metadata uses the actual full-width X header, not its name wrapper. */
+.xf-author-details,.xf-author-actions{display:none!important}
+html.xf-on .xf-author-header{display:flex!important;flex-direction:row!important;align-items:flex-start!important;gap:10px!important;min-width:0!important;box-sizing:border-box!important;flex-wrap:wrap!important}
+html.xf-on .xf-author-header>.xf-author-name-column{flex:1 1 120px!important;min-width:0!important;box-sizing:border-box!important}
+html.xf-on .xf-native-actions{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-end!important;flex:0 0 auto!important;min-width:0!important;max-width:100%!important;margin-left:0!important;flex-wrap:wrap!important;row-gap:6px!important}
+html.xf-on .xf-author-row{min-width:0!important;overflow:hidden!important}
+html.xf-on .xf-author-details{display:block!important;min-width:0;margin-top:2px}
+html.xf-on .xf-author-bio{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px;line-height:20px;color:var(--xf-muted)}
+html.xf-on .xf-author-bio[hidden],html.xf-on .xf-author-follow[hidden]{display:none!important}
+html.xf-on .xf-author-header>.xf-author-actions{position:static!important;transform:none!important;display:flex!important;flex:0 0 auto!important;gap:10px!important;align-items:center!important;min-height:26px;margin-left:auto!important;margin-right:0!important;white-space:nowrap}
+html.xf-on .xf-author-followers{font-size:12px;line-height:20px;color:var(--xf-muted);font-variant-numeric:tabular-nums}
+html.xf-on button.xf-author-follow{appearance:none!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;flex:0 0 60px!important;width:60px!important;min-width:60px!important;max-width:60px!important;height:26px!important;min-height:26px!important;max-height:26px!important;margin:0!important;padding:0!important;background:var(--xf-green)!important;color:var(--xf-paper)!important;border:0!important;border-radius:999px!important;font:600 12px/18px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;cursor:pointer;white-space:nowrap}
+html.xf-on button.xf-author-follow:hover:not(:disabled){background:var(--xf-green)!important;filter:brightness(.95)}
+html.xf-on button.xf-author-follow:focus-visible{outline:2px solid var(--xf-muted)!important;outline-offset:2px}
+html.xf-on button.xf-author-follow:disabled{cursor:default;opacity:.7}
+html.xf-on button.xf-author-follow[data-following="true"]{background:var(--xf-hover)!important;color:var(--xf-muted)!important}
+/* Keep a single follow control; subscription remains available. */
+html.xf-on .xf-author-header:has(.xf-author-actions) :is(button[data-testid$="-follow"],button[data-testid$="-unfollow"]){display:none!important}
+
+html.xf-on .xf-author-header:has(> .xf-author-actions) .xf-native-actions div:has(> button:is([data-testid$="-follow"],[data-testid$="-unfollow"])){display:none!important}
